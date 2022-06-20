@@ -1,0 +1,13 @@
+version: '3.8'
+networks: # to create a custom bridge
+  kostasbr111: 
+services:
+  kostasapp007:
+    image: kostasciapp:v1 
+    build: . 
+    container_name: kostascic1
+    ports:
+    - "1179:80"
+    restart: always 
+    networks: # use bridge created above 
+    - kostasbr111
