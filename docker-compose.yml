@@ -5,7 +5,7 @@ services:
     build: . # location of Dockerfile
     container_name: kostascc0011
     ports:
-      - "1167:80"
+      - "1164:80"
     restart: always
     environment:
       deploy: "app2"
