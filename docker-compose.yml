@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  kostasappfinal:
+    image: kostascustomer:v1
+    build: . # location of Dockerfile
+    container_name: kostascc0011
+    ports:
+      - "1167:80"
+    restart: always
+    environment:
+      deploy: "app2"
